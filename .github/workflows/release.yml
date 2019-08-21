@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: Shopify/upload-to-release@master
       with:
-        name: test
+        name: LICENSE
         path: LICENSE
-        # content-type: text/plain
+        content-type: text/plain
         repo-token: ${{ secrets.GITHUB_TOKEN }}
