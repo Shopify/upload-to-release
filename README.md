@@ -13,6 +13,8 @@ jobs:
         with:
           name: my-artifact
           path: build/a.out
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          content-type: text/plain # Optional
 ```
 
 ## Shoulders

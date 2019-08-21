@@ -10,5 +10,5 @@ jobs:
       with:
         name: test
         path: LICENSE
-        content-type: text/plain
+        # content-type: text/plain
         repo-token: ${{ secrets.GITHUB_TOKEN }}
