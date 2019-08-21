@@ -1,9 +1,24 @@
-# JavaScript Action Template
+# Upload to Release GitHub Action
 
-This template offers an easy way to get started writing a javascript action with TypeScript compile time support, unit testing with Jest and using the GitHub Actions Toolkit.
+A GitHub Action that uploads a file to a new release.
 
 ## Getting Started
 
-See the walkthrough located [here](https://github.com/actions/toolkit/blob/master/docs/javascript-action.md).
+```yml
+jobs:
+  build:
+    # ...
+    steps:
+      - uses: Shopify/upload-to-release
+        with:
+          name: my-artifact
+          path: build/a.out
+```
 
-In addition to walking your through how to create an action, it also provides strategies for versioning, releasing and referencing your actions.
+## Shoulders
+
+This was inspired by:
+
+- https://github.com/actions/javascript-template
+- https://github.com/JasonEtco/upload-to-release
+
