@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "A GitHub Action that uploads a file to a new release.",
   "main": "lib/main.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Shopify/upload-to-release.git"
@@ -21,13 +17,5 @@
   "dependencies": {
     "@actions/core": "^1.0.0",
     "@actions/github": "^1.0.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "@types/node": "^12.0.4",
-    "jest": "^24.8.0",
-    "jest-circus": "^24.7.1",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.5.1"
   }
 }
