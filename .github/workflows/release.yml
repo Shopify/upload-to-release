@@ -1,0 +1,14 @@
+name: "Release"
+on: [push]
+
+jobs:
+  check_pr:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: Shopify/upload-to-release@master
+      with:
+        name: test
+        path: LICENSE
+        content-type: text/plain
+        repo-token: ${{ secrets.GITHUB_TOKEN }}

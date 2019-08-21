@@ -8,6 +8,13 @@ inputs:
   path:
     description: 'Path to the file to upload'
     required: true
+  content-type:
+    description: 'Content type for the file'
+    required: false
+    default: 'application/octet-stream'
+  repo-token:
+    description: 'secrets.GITHUB_TOKEN'
+    required: true
 runs:
   using: 'node12'
   main: 'lib/main.js'
