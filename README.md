@@ -9,7 +9,7 @@ jobs:
   build:
     # ...
     steps:
-      - uses: Shopify/upload-to-release
+      - uses: Shopify/upload-to-release@1.0.0
         with:
           name: my-artifact
           path: build/a.out
