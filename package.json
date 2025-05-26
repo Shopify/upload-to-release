@@ -15,7 +15,7 @@
   "author": "Shopify",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^6.0.0"
+    "@actions/core": "^1.11",
+    "@actions/github": "^6.0"
   }
 }
